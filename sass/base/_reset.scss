@@ -1,0 +1,29 @@
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+.link {
+  text-decoration: none;
+}
+.activity__link {
+  text-decoration: none;
+}
+.button {
+  cursor: pointer;
+}
+
+.header-link,
+.hero-link,
+.list,
+.footer-link,
+.link,
+.footer-soc-list {
+  list-style: none;
+}

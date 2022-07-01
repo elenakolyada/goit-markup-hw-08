@@ -1,0 +1,25 @@
+.container-header {
+  display: flex;
+}
+.header {
+  font-size: 16px;
+  line-height: 2;
+  text-align: center;
+  color: rgb(117, 117, 117);
+  border-bottom: 1px solid #ececec;
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+}
+
+.my-icon {
+  display: inline-block;
+  fill: currentColor;
+  margin-right: 10px;
+  justify-content: center;
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+}
