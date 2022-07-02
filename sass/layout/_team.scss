@@ -102,6 +102,10 @@
   &:last-child {
     margin-right: 0;
   }
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
 }
 
 .soc__link {
