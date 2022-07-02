@@ -17,8 +17,7 @@ ol {
   padding-left: 0;
 }
 
-.link,
-.mob__soc {
+.link {
   text-decoration: none;
 }
 
@@ -35,8 +34,7 @@ ol {
 .list,
 .footer-link,
 .link,
-.footer-soc-list,
-.mob__soc {
+.footer-soc-list {
   list-style: none;
 }
 
@@ -286,6 +284,20 @@ ol {
   display: block;
   justify-content: space-between;
 }
+@media screen and (min-width: 768px) {
+  .list {
+    gap: 30px;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list {
+    margin-right: 30px;
+  }
+  .list:nth-child(3n) {
+    margin-right: 0;
+  }
+}
 
 .logo__leftpart {
   font-family: "Raleway";
@@ -390,6 +402,7 @@ ol {
   z-index: 1;
   padding-top: 48px;
   padding-bottom: 48px;
+  padding-left: 40px;
 }
 .mob-menu .container {
   display: flex;
@@ -433,11 +446,13 @@ ol {
 }
 
 .mob-connect__tel {
+  display: block;
   font-weight: 500;
   font-size: 24px;
-  line-height: 0.9 px;
+  line-height: 1.2px;
   letter-spacing: 0.02em;
   color: #757575;
+  margin-bottom: 64px;
 }
 
 .menu-open-btn {
@@ -449,6 +464,7 @@ ol {
   display: block;
   margin-left: auto;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .mob__soc {
@@ -457,16 +473,30 @@ ol {
   text-align: left;
 }
 
-.soc__item {
+.mob-soc__item {
+  padding-left: 0;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+}
+.mob-soc__item:nth-last-child(-3n+1) {
+  border-right: 1px solid transparent;
+  padding-right: 0px;
+}
+.mob-soc__item:hover, .mob-soc__item:focus {
+  border-right: solid blue;
+}
+
+.mob-soc__text {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  text-decoration: none;
 }
 
 .hero {
-  width: 100%;
+  width: 100% px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -488,7 +518,7 @@ ol {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 1600px;
+    max-width: 1200px;
     height: 600px;
     padding-bottom: 200px;
     padding-top: 200px;
@@ -504,7 +534,7 @@ ol {
 }
 
 .hero__title {
-  max-width: 480px;
+  max-width: 400px;
   display: inline-block;
   width: 696px;
   font-weight: 900;
@@ -515,6 +545,12 @@ ol {
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 1600px;
+    font-size: 44px;
+  }
 }
 
 .hero__button {

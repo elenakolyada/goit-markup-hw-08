@@ -34,7 +34,7 @@
   z-index: 1;
   padding-top: 48px;
   padding-bottom: 48px;
-  // padding-left: 40px;
+  padding-left: 40px;
   .container {
     display: flex;
     flex-direction: column;
@@ -73,11 +73,13 @@
   color: var(--accent-color);
 }
 .mob-connect__tel {
+  display: block;
   font-weight: 500;
   font-size: 24px;
-  line-height: 0.9 px;
+  line-height: 1.2px;
   letter-spacing: 0.02em;
   color: #757575;
+  margin-bottom: 64px;
 }
 
 .menu-open-btn {
@@ -89,17 +91,32 @@
   display: block;
   margin-left: auto;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 .mob__soc {
   display: flex;
   flex-direction: row;
   text-align: left;
 }
-.soc__item {
+.mob-soc__item {
+  padding-left: 0;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+  &:nth-last-child(-3n + 1) {
+    border-right: 1px solid transparent;
+    padding-right: 0px;
+  }
+  &:hover,
+  &:focus {
+    border-right: solid blue;
+  }
+}
+
+.mob-soc__text {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-
   color: var(--accent-color);
+  text-decoration: none;
 }
