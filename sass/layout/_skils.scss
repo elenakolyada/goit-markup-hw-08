@@ -9,26 +9,18 @@
   overflow: hidden;
 }
 .skils {
-  margin-right: -30px;
+  display: block;
 }
 .skils__item {
-  // display: block;
-  width: 270px;
-  justify-content: space-between;
-  margin-right: 30px;
-  &:nth-child(4n) {
-    margin-right: 0;
-    margin-bottom: 0;
-  }
+  display: block;
+  width: 450px;
+  text-align: center;
 }
 
 .skils__icon {
-  // display: flex;
-  width: 270px;
+  width: 450px;
   height: 120px;
   border-radius: 4px;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 30px;
   background-color: rgba(245, 244, 250, 1);
 }
@@ -38,7 +30,6 @@
 }
 
 .skils__title {
-  // display: block;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -47,9 +38,9 @@
   text-transform: uppercase;
 }
 .skils__text {
-  // display: block;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
+  text-align: left;
 }

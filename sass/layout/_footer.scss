@@ -5,6 +5,8 @@
 }
 .container-footer {
   display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
@@ -111,10 +113,13 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
+  text-align: center;
 }
 .mail-box {
   display: flex;
+  flex-direction: column;
   align-items: center;
+
   padding-top: 20px;
 }
 

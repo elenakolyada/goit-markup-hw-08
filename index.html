@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>homework_website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -62,6 +63,59 @@
               >
             </li>
           </ul>
+        </div>
+        <button type="button" class="menu-open-btn">0</button>
+        <div class="mob-menu is-hidden">
+          <div class="container">
+            <div class="mob-menu-top">
+              <button type="button" class="menu-close-btn">X</button>
+
+              <ul class="mob__list list">
+                <li class="mob__item">
+                  <a class="mob__link link current" href="">Студия</a>
+                </li>
+                <li class="mob__item">
+                  <a class="mob__link link" href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="mob__item">
+                  <a class="mob__link link" href="">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mob-menu-bottom">
+              <ul class="mob-connect list">
+                <li class="mob-connect__item">
+                  <a
+                    class="mob-connect__mail link"
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com</a
+                  >
+                </li>
+                <li class="mob-connect__item">
+                  <a class="mob-connect__tel link" href="tel:+380961111111">
+                    +38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+              <ul class="mob__soc list">
+                <li class="mob-soc__item">
+                  <a class="mob-soc__text" href="Instagram">Instagram</a>
+                </li>
+                <li class="mob-soc__item">
+                  <a class="mob-soc__text" href="Twitter">Twitter</a>
+                </li>
+                <li class="mob-soc__item">
+                  <a class="mob-soc__text" href="Facebook">Facebook</a>
+                </li>
+                <li class="mob-soc__item">
+                  <a class="mob-soc__text" href="LinkedIn">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -131,7 +185,7 @@
           </ul>
         </div>
       </section>
-      <section class="section section-no-padding">
+      <section class="section section-no-padding activity-section">
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
 
@@ -603,5 +657,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

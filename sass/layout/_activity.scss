@@ -1,3 +1,6 @@
+.activity-section {
+  display: none;
+}
 .title {
   display: block;
   text-align: center;
@@ -10,7 +13,7 @@
   letter-spacing: 0.03em;
 }
 .activity {
-  display: flex;
+  display: none;
   justify-content: space-between;
 }
 .activity__item {

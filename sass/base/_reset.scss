@@ -9,7 +9,8 @@ ol {
   margin: 0;
   padding-left: 0;
 }
-.link {
+.link,
+.mob__soc {
   text-decoration: none;
 }
 .activity__link {
@@ -24,6 +25,7 @@ ol {
 .list,
 .footer-link,
 .link,
-.footer-soc-list {
+.footer-soc-list,
+.mob__soc {
   list-style: none;
 }
