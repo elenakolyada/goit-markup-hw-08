@@ -9,12 +9,20 @@
   overflow: hidden;
 }
 .skils {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .skils__item {
-  display: block;
   width: 450px;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .skils__icon {
@@ -23,6 +31,15 @@
   border-radius: 4px;
   margin-bottom: 30px;
   background-color: rgba(245, 244, 250, 1);
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 120px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 120px;
+  }
 }
 .skils__title-icon {
   width: 70px;
