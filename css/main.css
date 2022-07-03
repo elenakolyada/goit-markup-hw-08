@@ -1082,8 +1082,6 @@ ol {
 
 .footer {
   background: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .container-footer {
@@ -1092,6 +1090,11 @@ ol {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (min-width: 1200px) {
+  .container-footer {
+    flex-direction: row;
+  }
 }
 
 .footer__contacts {
@@ -1119,9 +1122,19 @@ ol {
   margin-bottom: 20px;
   color: var(--primary-white-color);
 }
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    text-align: left;
+  }
+}
 
 .footer__list {
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__list {
+    text-align: left;
+  }
 }
 
 .footer__link {
@@ -1159,17 +1172,29 @@ ol {
 
 .footer-slogan {
   display: block;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-slogan {
+    margin-top: 65px;
+    margin-left: 165px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-slogan {
-    padding-left: 70px;
+    margin-top: 72px;
+    margin-left: 70px;
   }
 }
 
 .footer-send {
   display: block;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-send {
+    margin-top: 72px;
+  }
 }
 
 .footer-soc-item {
@@ -1223,12 +1248,22 @@ ol {
   color: rgb(255, 255, 255);
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer-text {
+    text-align: left;
+  }
+}
 
 .mail-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .mail-box {
+    flex-direction: row;
+  }
 }
 
 .footer-modal-input {
@@ -1271,6 +1306,11 @@ ol {
 .footer-modal-button:hover, .footer-modal-button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+@media screen and (min-width: 1200px) {
+  .footer-modal-button {
+    margin-top: 0;
+  }
+}
 
 .icon-send {
   display: block;
@@ -1281,6 +1321,13 @@ ol {
   fill: var(--primary-white-color);
   position: absolute;
   margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__tablet {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .hidden {

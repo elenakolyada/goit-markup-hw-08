@@ -1,7 +1,7 @@
 .footer {
   background: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  // padding-top: 60px;
+  // padding-bottom: 60px;
 }
 .container-footer {
   display: flex;
@@ -9,6 +9,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 .footer__contacts {
   display: block;
@@ -34,9 +37,17 @@
   padding-top: 60px;
   margin-bottom: 20px;
   color: var(--primary-white-color);
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
+
 .footer__list {
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer__link {
@@ -75,15 +86,22 @@
 
 .footer-slogan {
   display: block;
-  padding-bottom: 60px;
-
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-top: 65px;
+    margin-left: 165px;
+  }
   @media screen and (min-width: 1200px) {
-    padding-left: 70px;
+    margin-top: 72px;
+    margin-left: 70px;
   }
 }
 .footer-send {
   display: block;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 72px;
+  }
 }
 
 .footer-soc-item {
@@ -132,13 +150,18 @@
   text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .mail-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding-top: 20px;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 
 .footer-modal-input {
@@ -181,6 +204,9 @@
   &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
 }
 
 .icon-send {
@@ -191,4 +217,11 @@
   fill: var(--primary-white-color);
   position: absolute;
   margin-left: 10px;
+}
+
+.footer__tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
