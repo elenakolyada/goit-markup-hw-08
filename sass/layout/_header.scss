@@ -85,6 +85,13 @@
 .menu-open-btn {
   display: block;
   margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
 }
 
 .menu-close-btn {

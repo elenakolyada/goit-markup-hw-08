@@ -327,18 +327,18 @@ ol {
   line-height: 1.2;
   color: var(--primary-text-color);
   text-align: left;
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  margin-right: 88px;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 @media screen and (min-width: 768px) {
   .logo {
-    margin-right: 38px;
+    margin-right: 88px;
   }
 }
 @media screen and (min-width: 1200px) {
   .logo {
-    margin-right: 43px;
+    margin-right: 93px;
   }
 }
 
@@ -466,6 +466,16 @@ ol {
 .menu-open-btn {
   display: block;
   margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-open-btn {
+    display: none;
+  }
 }
 
 .menu-close-btn {
@@ -735,22 +745,6 @@ ol {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-@media screen and (min-width: 768px) {
-  .contacts {
-    margin-left: 50px;
-  }
-  .contacts:last-child(3n) {
-    margin-left: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contacts {
-    margin-right: 50px;
-  }
-  .contacts:nth-last-child(3n) {
-    margin-right: 0;
-  }
-}
 
 .connect {
   display: none;
@@ -760,12 +754,17 @@ ol {
     display: flex;
     flex-direction: column;
     margin-left: auto;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
   .connect {
     display: flex;
+    flex-direction: row;
     margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -777,13 +776,9 @@ ol {
   color: #757575;
   display: block;
   text-align: right;
-  margin-left: 50px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
-}
-.connect__link:nth-last-child(-2n) {
-  margin-left: 0;
 }
 .connect__link:hover, .connect__link:focus {
   color: var(--accent-color);
@@ -794,13 +789,22 @@ ol {
 
 .connect__item {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .connect__item:hover, .connect__item:focus {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .connect__item:not(:last-child) {
+    padding-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connect__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .nav {
@@ -814,6 +818,7 @@ ol {
 @media screen and (min-width: 1200px) {
   .nav {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -826,6 +831,10 @@ ol {
 }
 .nav__item:hover, .nav__item:focus {
   color: var(--accent-color);
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav__link {
@@ -1087,6 +1096,7 @@ ol {
 
 .footer__contacts {
   display: block;
+  align-items: center;
   padding-bottom: 60px;
 }
 
@@ -1104,9 +1114,14 @@ ol {
 
 .footer__logo {
   display: block;
+  text-align: center;
   padding-top: 60px;
   margin-bottom: 20px;
   color: var(--primary-white-color);
+}
+
+.footer__list {
+  text-align: center;
 }
 
 .footer__link {
@@ -1120,12 +1135,15 @@ ol {
 
 .footer__item {
   display: block;
-  margin-bottom: 9px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__item:hover, .footer__item:focus {
   color: var(--accent-color);
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .contacts-link-footer {
@@ -1141,7 +1159,17 @@ ol {
 
 .footer-slogan {
   display: block;
-  padding-left: 70px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-slogan {
+    padding-left: 70px;
+  }
+}
+
+.footer-send {
+  display: block;
+  padding-bottom: 60px;
 }
 
 .footer-soc-item {
@@ -1157,7 +1185,11 @@ ol {
 .footer-soc-list {
   display: flex;
   justify-content: center;
-  padding-right: 93px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-soc-list {
+    padding-right: 93px;
+  }
 }
 
 .footer-soc-link {
@@ -1234,6 +1266,7 @@ ol {
   padding-bottom: 10px;
   padding-left: 22px;
   padding-right: 62px;
+  margin-top: 20px;
 }
 .footer-modal-button:hover, .footer-modal-button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

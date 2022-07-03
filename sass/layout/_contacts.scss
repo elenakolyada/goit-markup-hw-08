@@ -4,20 +4,6 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-
-  @media screen and (min-width: 768px) {
-    margin-left: 50px;
-    &:last-child(3n) {
-      margin-left: 0;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-right: 50px;
-    &:nth-last-child(3n) {
-      margin-right: 0;
-    }
-  }
 }
 
 .connect {
@@ -26,11 +12,16 @@
     display: flex;
     flex-direction: column;
     margin-left: auto;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
+    flex-direction: row;
     margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 .connect__link {
@@ -41,13 +32,11 @@
   color: #757575;
   display: block;
   text-align: right;
-  margin-left: 50px;
+
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
-  &:nth-last-child(-2n) {
-    margin-left: 0;
-  }
+
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -59,12 +48,19 @@
 
 .connect__item {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+}
+
+.connect__item:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
   }
 }

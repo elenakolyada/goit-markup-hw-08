@@ -7,6 +7,7 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -16,11 +17,14 @@
   padding-bottom: 32px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 50px;
 }
 .nav__link {
   transition-duration: 250ms;

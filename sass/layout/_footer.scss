@@ -12,6 +12,7 @@
 }
 .footer__contacts {
   display: block;
+  align-items: center;
   padding-bottom: 60px;
 }
 .footer__adress {
@@ -29,9 +30,13 @@
 }
 .footer__logo {
   display: block;
+  text-align: center;
   padding-top: 60px;
   margin-bottom: 20px;
   color: var(--primary-white-color);
+}
+.footer__list {
+  text-align: center;
 }
 
 .footer__link {
@@ -45,13 +50,16 @@
 }
 .footer__item {
   display: block;
-  margin-bottom: 9px;
+
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
+}
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .contacts-link-footer {
@@ -67,7 +75,15 @@
 
 .footer-slogan {
   display: block;
-  padding-left: 70px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 70px;
+  }
+}
+.footer-send {
+  display: block;
+  padding-bottom: 60px;
 }
 
 .footer-soc-item {
@@ -83,7 +99,9 @@
 .footer-soc-list {
   display: flex;
   justify-content: center;
-  padding-right: 93px;
+  @media screen and (min-width: 1200px) {
+    padding-right: 93px;
+  }
 }
 .footer-soc-link {
   width: 100%;
@@ -158,6 +176,7 @@
   padding-bottom: 10px;
   padding-left: 22px;
   padding-right: 62px;
+  margin-top: 20px;
   &:hover,
   &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
