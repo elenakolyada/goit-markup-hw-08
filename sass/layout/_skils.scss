@@ -13,9 +13,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .skils__item {
   width: 450px;
   text-align: center;
+
   @media screen and (min-width: 768px) {
     width: 354px;
   }
@@ -26,10 +28,12 @@
 }
 
 .skils__icon {
+  padding-top: 25px;
   width: 450px;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
+
   background-color: rgba(245, 244, 250, 1);
   @media screen and (min-width: 768px) {
     width: 354px;

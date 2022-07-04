@@ -85,6 +85,13 @@
 .menu-open-btn {
   display: block;
   margin-left: auto;
+  border-color: transparent;
+  background-color: #ffffff;
+  color: #000000;
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -99,11 +106,18 @@
   margin-left: auto;
   margin-bottom: 30px;
   margin-top: 20px;
+  border-color: transparent;
+  background-color: #ffffff;
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
 }
 .mob__soc {
   display: flex;
   flex-direction: row;
   text-align: left;
+  padding-bottom: 48px;
 }
 .mob-soc__item {
   padding-left: 0;

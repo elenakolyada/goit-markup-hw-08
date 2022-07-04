@@ -35,7 +35,8 @@ ol {
 .team__list,
 .footer-link,
 .link,
-.footer-soc-list {
+.footer-soc-list,
+.soc {
   list-style: none;
 }
 
@@ -466,6 +467,12 @@ ol {
 .menu-open-btn {
   display: block;
   margin-left: auto;
+  border-color: transparent;
+  background-color: #ffffff;
+  color: #000000;
+}
+.menu-open-btn:hover, .menu-open-btn:focus {
+  color: #2196f3;
 }
 @media screen and (min-width: 768px) {
   .menu-open-btn {
@@ -483,12 +490,18 @@ ol {
   margin-left: auto;
   margin-bottom: 30px;
   margin-top: 20px;
+  border-color: transparent;
+  background-color: #ffffff;
+}
+.menu-close-btn:hover, .menu-close-btn:focus {
+  color: #2196f3;
 }
 
 .mob__soc {
   display: flex;
   flex-direction: row;
   text-align: left;
+  padding-bottom: 48px;
 }
 
 .mob-soc__item {
@@ -1363,6 +1376,7 @@ ol {
 }
 
 .skils__icon {
+  padding-top: 25px;
   width: 450px;
   height: 120px;
   border-radius: 4px;
