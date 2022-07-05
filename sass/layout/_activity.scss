@@ -1,5 +1,8 @@
 .activity-section {
   display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .title {
   display: block;
@@ -14,7 +17,10 @@
 }
 .activity {
   display: none;
-  justify-content: space-between;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .activity__item {
   display: block;

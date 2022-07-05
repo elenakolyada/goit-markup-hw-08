@@ -880,6 +880,11 @@ ol {
 .activity-section {
   display: none;
 }
+@media screen and (min-width: 1200px) {
+  .activity-section {
+    display: flex;
+  }
+}
 
 .title {
   display: block;
@@ -895,7 +900,12 @@ ol {
 
 .activity {
   display: none;
-  justify-content: space-between;
+}
+@media screen and (min-width: 1200px) {
+  .activity {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .activity__item {
