@@ -12,21 +12,18 @@
 .list-portfolio {
   display: block;
   margin-bottom: 30px;
+  margin-right: 30px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 30px;
     &:nth-child(2n) {
       margin-right: 0;
     }
 
     @media screen and (min-width: 1200px) {
-      margin-right: 30px;
-      display: flex;
-      flex-wrap: wrap;
       width: calc(100% / 3 - 30px);
     }
   }
@@ -117,7 +114,10 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+.content-link {
+  display: flex;
+  margin-right: 30px;
+}
 .portfolio-container {
   text-align: center;
   margin-bottom: 30px;
@@ -126,7 +126,6 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: -30px;
-    margin-right: 30px;
   }
 
   @media screen and (min-width: 1200px) {
