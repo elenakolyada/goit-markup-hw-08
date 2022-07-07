@@ -1021,14 +1021,9 @@ ol {
 
 .list-portfolio {
   display: block;
-  justify-content: space-between;
   margin-bottom: 30px;
-  margin-right: 30px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.list-portfolio:nth-child(3n) {
-  margin-right: 0;
 }
 .list-portfolio:hover, .list-portfolio:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1120,9 +1115,13 @@ ol {
 .portfolio-container {
   text-align: center;
   margin-bottom: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: -30px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .portfolio-container {
