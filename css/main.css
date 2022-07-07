@@ -1017,7 +1017,6 @@ ol {
 
 .list-portfolio {
   display: block;
-  justify-content: space-between;
   margin-bottom: 30px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1118,17 +1117,8 @@ ol {
   text-align: center;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 768px) {
-  .portfolio-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: -30px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .portfolio-container {
-    display: flex;
-    flex-wrap: wrap;
     margin-bottom: -30px;
   }
 }
