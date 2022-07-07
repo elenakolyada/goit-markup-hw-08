@@ -69,7 +69,8 @@
 }
 
 .portfolio__button-item {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   margin-right: 8px;
   margin-bottom: 20px;
   align-items: center;
