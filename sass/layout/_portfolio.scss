@@ -1,14 +1,14 @@
-.portfolio__button {
-  display: flex;
-  flex-wrap: wrap;
-  // padding-bottom: 56px;
+// .portfolio__button {
+//   display: flex;
+//   flex-wrap: wrap;
+//   // padding-bottom: 56px;
 
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//   }
+// }
 .list-portfolio {
   display: block;
   margin-bottom: 30px;
@@ -71,6 +71,7 @@
 .portfolio__button-item {
   display: block;
   margin-right: 8px;
+  margin-bottom: 20px;
   align-items: center;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
