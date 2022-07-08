@@ -1019,26 +1019,23 @@ ol {
 
 .portfolio__button {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   padding-bottom: 56px;
 }
-@media screen and (min-width: 1200px) {
-  .portfolio__button {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
 
-@media screen and (min-width: 768px) {
-  .list-portfolio:not(:last-child) {
-    margin-right: 30px;
-  }
+.list-portfolio {
+  display: block;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 1200px) {
-  .list-portfolio:not(:last-child) {
-    margin-right: 30px;
-  }
+.list-portfolio:nth-child(3n) {
+  margin-right: 0;
+}
+.list-portfolio:hover, .list-portfolio:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .list-portfolio:hover .content-top-text {
@@ -1072,19 +1069,17 @@ ol {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__button-item {
-  display: flex;
-  flex-wrap: wrap;
+.hero-link {
+  display: block;
   margin-right: 8px;
-  padding-bottom: 20px;
   align-items: center;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio__button-item:nth-child(5n) {
+.hero-link:nth-child(5n) {
   margin-right: 0;
 }
-.portfolio__button-item:hover, .portfolio__button-item:focus {
+.hero-link:hover, .hero-link:focus {
   color: var(--accent-color);
 }
 
@@ -1120,43 +1115,6 @@ ol {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.content-link {
-  display: flex;
-}
-
-.portfolio-container {
-  text-align: center;
-  margin-bottom: 30px;
-}
-@media screen and (min-width: 768px) {
-  .portfolio-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: -30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .portfolio-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: -30px;
-  }
-}
-
-.list-portfolio {
-  display: block;
-  margin-right: 8px;
-  align-items: center;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.list-portfolio:nth-child(5n) {
-  margin-right: 0;
-}
-.list-portfolio:hover, .list-portfolio:focus {
-  color: var(--accent-color);
 }
 
 .footer {
