@@ -40,6 +40,13 @@ ol {
   list-style: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
 .body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -668,12 +675,6 @@ ol {
   text-align: center;
 }
 
-.img {
-  width: 100%;
-  display: block;
-  height: auto;
-}
-
 .team__item {
   width: 100%;
   background-color: #ffffff;
@@ -690,7 +691,7 @@ ol {
 }
 @media screen and (min-width: 1200px) {
   .team__item {
-    width: 270px;
+    width: calc((100% - 90px) / 4);
     margin-bottom: 0;
   }
 }
