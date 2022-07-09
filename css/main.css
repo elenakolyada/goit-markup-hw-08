@@ -1016,11 +1016,16 @@ img {
   padding-bottom: 40px;
   margin-bottom: -15px;
 }
+@media screen and (min-width: 768px) {
+  .portfolio__button {
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .portfolio__button {
     display: flex;
     justify-content: center;
-    padding-bottom: 56px;
+    padding-bottom: 50px;
     margin-bottom: 0;
   }
 }
@@ -1098,6 +1103,11 @@ img {
 .portfolio__button-item:hover, .portfolio__button-item:focus {
   color: var(--accent-color);
 }
+@media screen and (min-width: 1200px) {
+  .portfolio__button-item {
+    padding-bottom: 0;
+  }
+}
 
 .post-title {
   font-weight: 700;
@@ -1131,6 +1141,13 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container-elements {
+  display: block;
+  border: 1px solid #ececec;
+  border-top: none;
+  padding: 20px 24px 20px 24px;
 }
 
 .footer {
