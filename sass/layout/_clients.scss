@@ -1,11 +1,17 @@
 .clients-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
+
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
   color: black;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 .clients {
   display: flex;
@@ -15,7 +21,7 @@
 
 .clients__item {
   width: 210px;
-  height: 92x;
+  height: 92px;
 
   @media screen and (min-width: 768px) {
     width: 226px;
