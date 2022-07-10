@@ -1367,6 +1367,7 @@ img {
   padding-bottom: 10px;
   padding-left: 22px;
   padding-right: 62px;
+  margin-right: 16px;
 }
 .footer-modal-button:hover, .footer-modal-button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1385,6 +1386,7 @@ img {
 @media screen and (min-width: 1200px) {
   .icon-send {
     padding-top: 0;
+    padding-right: 16px;
   }
 }
 
@@ -1406,7 +1408,6 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__tablet {
     padding-bottom: 0;
-    justify-content: center;
   }
 }
 
