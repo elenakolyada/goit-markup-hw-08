@@ -1255,6 +1255,12 @@ img {
     padding-bottom: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-slogan {
+    padding-left: 70px;
+  }
+}
+
 .footer-send {
   display: block;
 }
@@ -1272,11 +1278,6 @@ img {
   display: flex;
   justify-content: center;
   padding-top: 20px;
-}
-@media screen and (min-width: 1200px) {
-  .footer-soc-list {
-    padding-right: 93px;
-  }
 }
 
 .footer-soc-link {
@@ -1367,7 +1368,7 @@ img {
   padding-bottom: 10px;
   padding-left: 22px;
   padding-right: 62px;
-  margin-right: 16px;
+  margin-left: 16px;
 }
 .footer-modal-button:hover, .footer-modal-button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

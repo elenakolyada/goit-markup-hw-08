@@ -7,7 +7,7 @@
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  // align-items: center;
+
   justify-content: space-between;
   @media screen and (min-width: 1200px) {
     flex-direction: row;
@@ -91,6 +91,7 @@
     padding-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
+    padding-left: 70px;
   }
 }
 .footer-send {
@@ -111,9 +112,6 @@
   display: flex;
   justify-content: center;
   padding-top: 20px;
-  @media screen and (min-width: 1200px) {
-    padding-right: 93px;
-  }
 }
 .footer-soc-link {
   width: 100%;
@@ -174,7 +172,6 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   @media screen and (min-width: 768px) {
     width: 358px;
-    // padding-right: 16px;
   }
 }
 
@@ -199,7 +196,7 @@
   padding-bottom: 10px;
   padding-left: 22px;
   padding-right: 62px;
-  margin-right: 16px;
+  margin-left: 16px;
 
   &:hover,
   &:focus {
