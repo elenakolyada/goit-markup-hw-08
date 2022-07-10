@@ -437,8 +437,7 @@ img {
   left: 0;
   background-color: #ffffff;
   width: 100vw;
-  height: 100vw;
-  z-index: 1.2;
+  z-index: 2;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
@@ -1387,7 +1386,6 @@ img {
 @media screen and (min-width: 1200px) {
   .icon-send {
     padding-top: 0;
-    padding-right: 16px;
   }
 }
 
@@ -1477,7 +1475,12 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .skils__title {
+    text-align: left;
+  }
 }
 
 .skils__text {
