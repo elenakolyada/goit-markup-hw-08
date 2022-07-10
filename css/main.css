@@ -211,10 +211,15 @@ img {
 
 .check-text {
   color: #757575;
-  font-size: 14px;
+  font-size: 12px;
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+  }
 }
 
 .check-text::before {
