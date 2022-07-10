@@ -1253,15 +1253,8 @@ img {
   .footer-slogan {
     padding-top: 0;
     padding-bottom: 0;
-    margin-left: 165px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .footer-slogan {
-    margin-left: 70px;
-  }
-}
-
 .footer-send {
   display: block;
 }
@@ -1340,7 +1333,6 @@ img {
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  margin-right: 12px;
   background-color: #2f303a;
   align-items: center;
   letter-spacing: 0.03em;
@@ -1387,12 +1379,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .icon-send {
-    padding: top 0;
+    padding-top: 30px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .icon-send {
-    padding: top 0;
+    padding-top: 0;
   }
 }
 
@@ -1406,12 +1398,15 @@ img {
   .footer__tablet {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
     padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__tablet {
     padding-bottom: 0;
+    justify-content: center;
   }
 }
 
