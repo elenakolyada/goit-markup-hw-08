@@ -79,15 +79,15 @@
   align-items: center;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
   &:nth-child(5n) {
     margin-right: 0;
   }
   &:hover,
   &:focus {
     color: var(--accent-color);
-  }
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 0;
   }
 }
 

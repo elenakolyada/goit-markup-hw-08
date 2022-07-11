@@ -1115,16 +1115,16 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .portfolio__button-item {
+    padding-bottom: 0;
+  }
+}
 .portfolio__button-item:nth-child(5n) {
   margin-right: 0;
 }
 .portfolio__button-item:hover, .portfolio__button-item:focus {
   color: var(--accent-color);
-}
-@media screen and (min-width: 1200px) {
-  .portfolio__button-item {
-    padding-bottom: 0;
-  }
 }
 
 .post-title {
