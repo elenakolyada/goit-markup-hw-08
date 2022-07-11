@@ -358,9 +358,6 @@ img {
   line-height: 1.2;
   color: var(--primary-text-color);
   text-align: left;
-  margin-right: 88px;
-  padding-top: 26px;
-  padding-bottom: 26px;
 }
 @media screen and (min-width: 768px) {
   .logo {
@@ -408,8 +405,8 @@ img {
 
 .container-header {
   display: flex;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 .header {
@@ -520,8 +517,6 @@ img {
 .menu-close-btn {
   display: block;
   margin-left: auto;
-  margin-bottom: 30px;
-  margin-top: 20px;
   border-color: transparent;
   background-color: #ffffff;
 }
@@ -601,7 +596,7 @@ img {
 }
 
 .hero__title {
-  max-width: 400px;
+  max-width: 300px;
   display: inline-block;
   width: 696px;
   font-weight: 900;
@@ -612,6 +607,11 @@ img {
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    max-width: 400px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -627,7 +627,7 @@ img {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   font-weight: 700;
-  width: 200px;
+  width: 150px;
   height: 50px;
   font-size: 16px;
   line-height: 1.88;
@@ -644,6 +644,11 @@ img {
 }
 .hero__button:hover, .hero__button:focus {
   background-color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .hero__button {
+    width: 200px;
+  }
 }
 
 .team {
@@ -773,8 +778,6 @@ img {
     display: flex;
     flex-direction: column;
     margin-left: auto;
-    padding-top: 21px;
-    padding-bottom: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -782,8 +785,6 @@ img {
     display: flex;
     flex-direction: row;
     margin-left: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
 }
 
@@ -844,8 +845,6 @@ img {
 
 .nav__item {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1331,7 +1330,7 @@ img {
 }
 
 .footer-modal-input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1430,7 +1429,7 @@ img {
 }
 
 .skils__item {
-  width: 450px;
+  width: 100%;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -1446,7 +1445,7 @@ img {
 
 .skils__icon {
   padding-top: 25px;
-  width: 450px;
+  width: 100%;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
