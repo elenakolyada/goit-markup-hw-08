@@ -408,6 +408,8 @@ img {
 
 .container-header {
   display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .header {
